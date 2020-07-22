@@ -2,7 +2,6 @@
   "pages":[
     "pages/outMsg/outMsg",
     "pages/index/index",
-    
     "pages/member/member",
     "pages/setting/setting",
     "pages/logs/logs"
