@@ -1,0 +1,4 @@
+<!--pages/outMsg/outMsg.wxml-->
+<button type="primary" bindtap="getUserId">获取ID</button>
+<button type="warmming" bindtap="getPermission">授权</button>
+<button type="light" bindtap="outMsg">发送</button>

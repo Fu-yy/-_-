@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/outMsg/outMsg",
+    "pages/index/index",
+    
+    "pages/member/member",
+    "pages/setting/setting",
+    "pages/logs/logs"
+  ],
+
+  "window":{
+
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#0096ff",
+    "enablePullDownRefresh":true,
+    "navigationBarTitleText": "通知发布",
+    "navigationBarTextStyle":"white",
+    "backGroundColor":"dark"
+
+  },
+
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "通知列表",
+      "iconPath": "icons/order_unread.png",
+      "selectedIconPath": "icons/order_unread (1).png"
+    },
+    {
+      "pagePath": "pages/outMsg/outMsg",
+      "text": "发布通知",
+      "iconPath": "icons/edit.png",
+      "selectedIconPath": "icons/edit (1).png"
+    },
+    {
+      "pagePath":  "pages/member/member",
+      "text": "人员管理",
+      "iconPath": "icons/user.png",
+      "selectedIconPath": "icons/user (1).png"
+    },
+    {
+      "pagePath":  "pages/setting/setting",
+      "text": "设置",
+      "iconPath": "icons/setting.png",
+      "selectedIconPath": "icons/setting (1).png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

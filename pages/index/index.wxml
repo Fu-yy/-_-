@@ -1,0 +1,96 @@
+<!--index.wxml-->
+<!-- 通知列表 结构：
+
+      未读取：
+        1.****
+        2.***
+      确定参加：
+        1.***
+        2.***
+      无法参加：
+        1.***
+        2.***
+      
+       -->
+<!-- text标签不会换行 -->
+<!-- view 相当于div -->
+<view class="container">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+
+
+  <view >{{msg}}</view>
+</view>
+
+<!-- 列表循环     -->
+  <text >状态为0</text>
+<view wx:key="id" wx:for="{{list}}" wx:for-item="item" wx:for-index="index">
+  <view wx:if="{{item.msgState === 0}}">
+    通知id： {{item.msgId}}
+    通知信息：{{item.msgInfo}}
+    截止时间：{{item.msgLastTime}}
+  </view>
+</view>
+
+
+
+
+
+<text >状态为1</text>
+<view wx:key="id" wx:for="{{list}}" wx:for-item="item" wx:for-index="index">
+
+  <view wx:if="{{item.msgState === 1}}">
+    通知id： {{item.msgId}}
+    通知信息：{{item.msgInfo}}
+    截止时间：{{item.msgLastTime}}
+  </view>
+  </view>
+  
+  <text >状态为2</text>
+<view wx:key="id" wx:for="{{list}}" wx:for-item="item" wx:for-index="index">
+
+  <view wx:if="{{item.msgState === 2}}">
+    通知id： {{item.msgId}}
+    通知信息：{{item.msgInfo}}
+    截止时间：{{item.msgLastTime}}
+  </view>
+  </view>
+
+
+
+
+
+
+
+
+
+<view wx:key="name" wx:for="{{person}}" wx:for-index="key" wx:for-item="value">
+  属性：{{key}}
+  值：{{value}}
+
+</view>
+
+
+<button type="primary" bindtap="handle1">cliclj</button>
+
+
+<button bindtap="getUserId">获取userId</button>
+<button bindtap="getUserId">授权</button>
+<button bindtap="sendMsg">发送消息</button>
+
+
+<button bindtap="imgsss">绑定服务端图片</button>
+<image src="{{imgData}}"></image>
+
+<text >{{dataBean}}</text>
+
+<!-- 条件渲染 -->
