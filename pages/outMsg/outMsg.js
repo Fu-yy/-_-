@@ -49,6 +49,4 @@ Page({
         })
         this.sendFun("o9G4t5ES_llEcmbO4Nmrgbv3NE74","asdasdasda")
     }
-
-   
 })

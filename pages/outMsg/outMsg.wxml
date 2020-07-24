@@ -2,3 +2,15 @@
 <button type="primary" bindtap="getUserId">获取ID</button>
 <button type="warmming" bindtap="getPermission">授权</button>
 <button type="light" bindtap="outMsg">发送</button>
+
+<editor
+  id="editor"
+  class="ql-container"
+  placeholder="{{placeholder}}"
+  showImgSize
+  showImgToolbar
+  showImgResize
+  bindstatuschange="onStatusChange"
+  read-only="{{readOnly}}"
+  bindready="onEditorReady">
+</editor>

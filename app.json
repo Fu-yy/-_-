@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/login/login",
     "pages/outMsg/outMsg",
     "pages/index/index",
     "pages/member/member",
